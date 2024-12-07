@@ -1,0 +1,180 @@
+.App {
+  margin: auto;
+  margin-top: 2rem;
+  width: 55%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.App .friends-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.friends-container .friend {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: .5rem;
+}
+
+.friend .img-container {
+  align-self: flex-start;
+  display: flex;
+  width: 60px;
+}
+
+.friend .friend-info {
+  width: calc(100% - 60px);
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding-left: 1rem;
+  align-items: start;
+}
+
+.friend-info p {
+  font-weight: 550;
+}
+
+.App button {
+  min-width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .5rem;
+  padding: .5rem;
+  font-weight: 600;
+  color: #000;
+  background: rgb(255, 140, 58);
+  border: 0;
+  font-size: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.App .add-friend {
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  background: rgb(28, 255, 175);
+  padding: .7rem;
+  border-radius: .5rem;
+  gap: 1rem;
+}
+
+.App #add-friend-btn {
+  align-self: flex-end;
+}
+
+.add-friend > div {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.add-friend > div > label {
+  width: 40%;
+}
+
+.add-friend > div > input {
+  height: 30px;
+  padding-left: .5rem;
+  border-radius: .2rem;
+  border: 0;
+  outline: 0;
+}
+
+.add-friend button {
+  align-self: flex-end;
+  cursor: pointer;
+  width: 50%;
+}
+
+.App .split-bill {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: rgb(44, 255, 213);
+  border-radius: .5rem;
+}
+
+.split-bill .inputs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputs > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.inputs > div > p {
+  width: 60%;
+}
+
+.inputs > div > input, select {
+  width: 30%;
+  height: 30px;
+  text-align: center;
+}
+
+.split-bill button {
+  align-self: flex-end;
+  width: 30%;
+  padding: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: .5rem;
+  background: rgb(255, 140, 58);
+  cursor: pointer;
+}
+
+.green {
+  color: green;
+  font-weight: 700;
+}
+
+.red {
+  color: red;
+  font-weight: 700;
+}
+
+#close {
+  align-self: flex-end;
+  margin-top: .5rem;
+}
+
+.selected {
+  background: #05c5ff23;
+  border-radius: .5rem;
+}
