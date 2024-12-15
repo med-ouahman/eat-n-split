@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <div className="friends-container">
         {friends.map(friend => (
-          <Friend {...friend} onSelect={setSelected} key={Math.random()} selected={selected} onClose={onClose} />
+          <Friend {...friend} onSelect={setSelected} key={friend.img} selected={selected} onClose={onClose} />
         ))}
 
         {!addNew && <button id="add-friend-btn" onClick={() => setAddNew(true)}>
